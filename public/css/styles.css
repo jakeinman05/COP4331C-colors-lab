@@ -1,7 +1,7 @@
 body 
 {
     background-color: #707070;
-    background-image: url("../images/background.png");
+    background-image: url("/images/background.png");
     background-repeat: repeat;
 }
 

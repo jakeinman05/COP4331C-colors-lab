@@ -1,4 +1,4 @@
-const urlBase = '/LAMPAPI';
+const urlBase = '/api';
 const extension = 'php';
 
 let userId = 0;
@@ -46,7 +46,7 @@ function doLogin()
 
 				saveCookie();
 	
-				window.location.href = "color.html";
+				window.location.href = "/api/color.html";
 			}
 		};
 		xhr.send(jsonPayload);
@@ -91,7 +91,7 @@ function readCookie()
 	
 	if( userId < 0 )
 	{
-		window.location.href = "index.html";
+		window.location.href = "/public/index.html";
 	}
 	else
 	{
@@ -105,7 +105,7 @@ function doLogout()
 	firstName = "";
 	lastName = "";
 	document.cookie = "firstName= ; expires = Thu, 01 Jan 1970 00:00:00 GMT";
-	window.location.href = "index.html";
+	window.location.href = "/public/index.html";
 }
 
 function addColor()
