@@ -43,7 +43,7 @@ The application allows users to log in, add colors to their personal collection,
 
 7. Open the application through the server in a web browser.
 
-##Usage
+## Usage
 1. Open the login page.
 
 2. Sign in through an account stored in the database (or create one and login).
