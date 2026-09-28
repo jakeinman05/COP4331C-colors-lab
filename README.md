@@ -35,6 +35,23 @@ The application allows users to log in, add colors to their personal collection,
 
 3. Configure Apache so that the contents of the `public` directory are accesible through the web server.
 
+4. Create required MySQL database and tables (User and Colors)
+
+5. Configure PHP API files with connections to your database.
+
+6. Make sure frontend API URL points to the deployed API location.
+
+7. Open the application through the server in a web browser.
+
+##Usage
+1. Open the login page.
+
+2. Sign in through an account stored in the database (or create one and login).
+
+3. Add colors and search for added colors using respective inputs.
+
+4. Logout when finished.
+
 ## AI Assistance Disclosure
 This project was developed with assistance from generative AI tools:
 - **Tool**: GPT-5.6 Sol
@@ -46,4 +63,4 @@ Also generated proper and correct legal statement regarding the LICENSE.md file.
 
 All AI-generated code was reviewed, tested, and modified to meet
 assignment requirements. Final implementation reflects my understanding
-of th
+of the concepts.
