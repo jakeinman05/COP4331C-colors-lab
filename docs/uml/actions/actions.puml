@@ -1,0 +1,41 @@
+@startuml
+
+start
+
+:Display login page;
+:Enter username and password;
+:Send login request to Login.php;
+
+if (Credentials valid?) then (yes)
+    :Store user information;
+    :Display color page;
+
+    while (User logged in?) is (yes)
+
+        if (User action?) then (Add Color)
+            :Enter color;
+            :Send request to AddColor.php;
+            :Store color in database;
+
+        elseif (Search Colors)
+            :Enter search text;
+            :Send request to SearchColors.php;
+            :Retrieve matching colors;
+            :Display results;
+
+        else (Logout)
+            :Clear user information;
+            break
+        endif
+
+    endwhile (no)
+
+    :Return to login page;
+
+else (no)
+    :Display invalid login message;
+endif
+
+stop
+
+@enduml
