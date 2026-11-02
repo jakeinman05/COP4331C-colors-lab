@@ -1,0 +1,25 @@
+@startuml
+
+class User {
+    - id : int
+    - firstName : string
+    - lastName : string
+    - login : string
+    - password : string
+
+    + login()
+    + logout()
+}
+
+class Color {
+    - userId : int
+    - name : string
+
+    + addColor()
+    + searchColors()
+}
+
+
+User " " -- " " Color
+
+@enduml
